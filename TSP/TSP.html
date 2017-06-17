@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TSP</title>
+    <script src="LAB.min.js"></script>
+    <script>
+        $LAB
+                .script('Vector2.js').wait()
+                .script('Utils.js').wait()
+                .script('Canvas2D.js').wait()
+                .script('Chart.js').wait()
+                .script('Alg.js').wait()
+                .script('MapTSP.js').wait()
+                .script('GaTSP.js').wait()
+                .script('Graph.js').wait(function () {
+                    graph.start('mycanvas', 'mychart', 480, 480);
+                });
+
+    </script>
+</head>
+
+<body>
+    <canvas id="mycanvas" width="480" height="480"></canvas>
+    <canvas id="mychart" width="480" height="480"></canvas>
+</body>
+</html>
